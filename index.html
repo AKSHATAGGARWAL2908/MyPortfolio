@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Akshat Aggarwal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Akshat Aggarwal
+          <div class="contact_info">
+            <img src="Images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          aggarwal.2908@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="Images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91 9837989919
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="Images/MyImg.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Akshat Aggarwal! 👋 
+          </h1>
+          <p>
+            I am a full stack developer with 1+ years of experience in development using .Net Core.
+            I have worked on applications and microservices deployed on on-premises Server. 
+            I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="Images/html5.png"/>
+          <!-- <h6>HTML</h6>
+          <p>2 years experience</p> -->
+          <p>HTML</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/CSS3.png"/>
+          <!-- <h6>CSS</h6>
+          <p>3 years experience</p> -->
+          <p>CSS</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="Images/js.jpeg"/>
+          <!-- <h6>JavaScript</h6>
+          <p>6 months experience</p> -->
+          <p>JavaScript</p>
+        </div>  
+        <div class="skill">
+          <img src="Images/cs.png"/>
+          <!-- <h6>C#</h6>
+          <p>1 year experience</p> -->
+          <p>C#</p>
+        </div>  
+        <div class="skill">
+          <img src="Images/aspNet.png"/>
+          <!-- <h6>ASP.net</h6>
+          <p>3 years experience</p> -->
+          <p>ASP.net</p>
+        </div> 
+        <div class="skill">
+          <img src="Images/NET_Core_Logo.svg.png"/>
+          <!-- <h6>.Net Core</h6>
+          <p>3 years experience</p> -->
+          <p>.Net Core</p>
+        </div>  
+        <div class="skill">
+          <img src="Images/python.jpg"/>
+          <!-- <h6>Python</h6>
+          <p>3 years experience</p> -->
+          <p>Python</p>
+        </div>  
+        <div class="skill">
+          <img src="Images/sql.png"/>
+          <!-- <h6>SQL</h6>
+          <p>3 years experience</p> -->
+          <p>SQL</p>
+        </div>  
+        <div class="skill">
+          <img src="Images/aws.png"/>
+          <!-- <h6>AWS</h6>
+          <p>3 years experience</p> -->
+          <p>AWS</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Javascript Calculator</h3>
+            <ul>
+              <li>Developed a secure website integrated with Javascript Calculator for an automobile client using HTML, CSS, JavaScript</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Sentiment Analyzer</h3>
+            <ul>
+              <li>Developed a sentiment analyzer using AWS Cloud Services</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Speech-to-text</h3>
+            <ul>
+              <li>Created a speech to text model using the AWS Cloud Services</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Akshat's coding finesse is unparalleled. His innovative approach to problem-solving and dedication to quality work make him a standout developer. A pleasure to collaborate with!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Akshat is like having a secret weapon on your team. He effortlessly turns complex ideas into elegant solutions. A true tech wizard and a joy to work with.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Akshat's commitment to excellence is commendable. His knack for turning visions into reality is impressive. A reliable and skilled professional, he's an asset to any project.
+          <span>&#8221;</span>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="Images/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here-->
+        Thanks for a Recommendation!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
